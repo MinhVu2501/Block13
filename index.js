@@ -3,18 +3,18 @@ const alertTemperature = () => {
   const Fahrenheit = Number(FahrenheitTemp);
 
   const CelsiusTemp = Math.round((Fahrenheit - 32) * (5/9));
-  const message = "Fahrenheit Temp:" + ` ${Fahrenheit}` + " Celsius Temp" + ` ${CelsiusTemp}`;
-  if(CelsiusTemp < 32) {
+  const message = `Fahrenheit Temp: ${Fahrenheit} Celsius Temp: ${CelsiusTemp}`;
+  if(Fahrenheit < 32) {
     alert(message + ' It is very cold');
-  } if (CelsiusTemp >= 32 && CelsiusTemp < 64) {
+  } if (Fahrenheit >= 32 && Fahrenheit < 64) {
     alert(message + ' It is cold');
-  } if (CelsiusTemp >= 64 && CelsiusTemp < 86) {
+  } if (Fahrenheit >= 64 && Fahrenheit < 86) {
     alert(message + ' It is warm');
-  } if (CelsiusTemp >= 86 && CelsiusTemp < 100) {
+  } if (Fahrenheit >= 86 && Fahrenheit < 100) {
     alert(message + ' It is hot');
-  } else {
+  } if (Fahrenheit >= 100) {
     alert(message + ' It is very hot');
-  };
+  }
 };
 alertTemperature();
 
