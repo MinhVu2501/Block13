@@ -6,13 +6,13 @@ const alertTemperature = () => {
   const message = `Fahrenheit Temp: ${Fahrenheit} Celsius Temp: ${CelsiusTemp}`;
   if(Fahrenheit < 32) {
     alert(message + ' It is very cold');
-  } if (Fahrenheit >= 32 && Fahrenheit < 64) {
+  } else if (Fahrenheit >= 32 && Fahrenheit < 64) {
     alert(message + ' It is cold');
-  } if (Fahrenheit >= 64 && Fahrenheit < 86) {
+  } else if (Fahrenheit >= 64 && Fahrenheit < 86) {
     alert(message + ' It is warm');
-  } if (Fahrenheit >= 86 && Fahrenheit < 100) {
+  } else if (Fahrenheit >= 86 && Fahrenheit < 100) {
     alert(message + ' It is hot');
-  } if (Fahrenheit >= 100) {
+  } else {
     alert(message + ' It is very hot');
   }
 };
